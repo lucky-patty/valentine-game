@@ -1,1 +1,20 @@
 @import 'tailwindcss';
+
+@font-face {
+    font-family: 'Balonku';
+    font-style: normal;
+    src: url('/src/lib/fonts/balonku-font/BalonkuRegular-la1w.otf');
+}
+
+@font-face {
+    font-family: 'Cookie-Monster';
+    font-style: normal;
+    src: url('/src/lib/fonts/cookie-monster-font/Cookiemonster-gv11.ttf');
+}
+
+
+@font-face {
+    font-family: 'Honeybee';
+    font-style: normal;
+    src: url('/src/lib/fonts/honeybee-font/Honeybeeregular-MG0p.ttf');
+}
