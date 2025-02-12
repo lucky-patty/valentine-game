@@ -51,8 +51,8 @@
 		{/if}
 	</div>
 	{#if accept}
-		<div class="flex h-[85%] w-full flex-col justify-start items-center gap-5 xl:py-10 ">
-			<p class="w-full text-center font-[Cookie-Monster] font-bold text-2xl 2xl:text-7xl tracking-wide">
+		<div class="flex h-[90%] w-full flex-col justify-start items-center gap-5 xl:py-10 ">
+			<p class="w-full pb-30  text-center font-[Cookie-Monster]  text-2xl 2xl:text-7xl tracking-wide">
 				My days are full, the hours race, <br />
 				A whirlwind life, a frantic pace. <br />
 				Yet in the chaos, through the grind, <br />
