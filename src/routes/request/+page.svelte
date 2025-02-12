@@ -42,17 +42,17 @@
 	}
 </script>
 
-<div class="flex h-screen w-screen flex-col items-center justify-center gap-5 bg-[#faf0e2]">
-	<div class="h-1/5 w-full">
+<div class="flex h-screen w-screen flex-col items-center justify-center gap-5 py-10 overflow-y-auto bg-[#faf0e2]">
+	<div class="h-[10%] xl:h-[15%] w-full">
 		{#if !accept}
-			<h1 class="text-center font-[Balonku] text-9xl">Will you be my valentine?</h1>
+			<h1 class="text-center font-[Balonku] text-4xl 2xl:text-9xl">Will you be my valentine?</h1>
 		{:else}
-			<h1 class="text-center font-[Cookie-Monster] text-9xl">Please read this poem</h1>
+			<h1 class="text-center font-[Cookie-Monster] font-bold text-3xl 2xl:text-9xl">Please read this poem</h1>
 		{/if}
 	</div>
 	{#if accept}
-		<div class="flex h-4/5 w-full flex-col justify-center items-center gap-5 overflow-y-scroll">
-			<p class="w-full text-center font-[Cookie-Monster] text-7xl tracking-wide">
+		<div class="flex h-[85%] w-full flex-col justify-start items-center gap-5 xl:py-10 ">
+			<p class="w-full text-center font-[Cookie-Monster] font-bold text-2xl 2xl:text-7xl tracking-wide">
 				My days are full, the hours race, <br />
 				A whirlwind life, a frantic pace. <br />
 				Yet in the chaos, through the grind, <br />
@@ -77,12 +77,15 @@
                 <img class="w-2/4" alt="yes" src={yesGif} />
             </div> -->
 		</div>
+        <div class="w-full h-[5%]">
+
+        </div>
 	{:else}
 		<div class="flex h-1/4 w-full flex-row items-center justify-center gap-10">
-			<button class="h-2/5 w-1/5 rounded-3xl font-[Balonku] text-7xl" onclick={SheSaidYes}
+			<button class="h-2/4 w-2/5 rounded-3xl font-[Balonku] font-bold text-3xl 2xl:text-7xl" onclick={SheSaidYes}
 				>Yes ❤️</button
 			>
-			<button class="h-2/5 w-1/5 rounded-3xl font-[Balonku] text-7xl" onclick={IncreaseNoIndex}
+			<button class="h-2/4 w-2/5 rounded-3xl font-[Balonku] text-3xl 2xl:text-7xl" onclick={IncreaseNoIndex}
 				>{noQuote[noIndex]}</button
 			>
 		</div>
